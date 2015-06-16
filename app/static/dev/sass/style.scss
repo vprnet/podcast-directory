@@ -1,0 +1,125 @@
+@import "bootstrap";
+@import "compass/css3";
+@import "mixin";
+@import "fort";
+@import "vpr";
+@import "vpr-svg";
+@import "ionicons";
+@import "video";
+@import "form";
+@import "band_detail";
+
+.molat {
+    font-family: Molot;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+hr {
+    border-top: 5px solid lighten($black, 10%);
+}
+
+h1, h2, h3 {
+    font-family: Molot;
+}
+
+#underwriter {
+    div {
+        display: block;
+        margin: 0 auto;
+    }
+    @media (min-width: $laptop) {
+        float: right;
+    }
+}
+
+.navbar {
+    min-height: 63px;
+    @media (max-width: $phone) {
+        min-height: 45px;
+    }
+    .navbar-header {
+        @media (max-width: $tablet) {
+            padding: 0 15px 0;
+        }
+        #navbar-title {
+            a {
+                color: lighten($gold, 10%);
+                &:hover {
+                    color: $blue;
+                }
+            }
+            font-size: 36px !important;
+            @media (max-width: $phone) {
+                font-size: 24px !important;
+            }
+            font-family: Molot;
+            span.live_from {
+                font-family: GrandHotel Regular;
+            }
+            @media (max-width: $tablet) {
+                text-align: left !important;
+            }
+        }
+
+        .social_logos {
+            top: 8px !important;
+            @media (max-width: $phone) {
+                top: -2px !important;
+            }
+            li {
+                i.icon {
+                    @media (max-width: $phone) {
+                        font-size: 24px !important;
+                    }
+                }
+            }
+        }
+
+        #vpr_logo {
+            top: 8px !important;
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+    }
+}
+
+.preview {
+    margin-bottom: 10px;
+    h3.preview_bandname {
+        margin-top: 10px;
+    }
+}
+
+.this_month {
+    font-weight: 600;
+    color: $gray;
+    margin: 20px 0 0;
+    @media (max-width: $phone) {
+        margin-top: 5px;
+    }
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.landing {
+    .featured_band {
+        margin-top: 0;
+    }
+}
+
+.bandname {
+    color: $black2;
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+    }
+}
+
+.about {
+    margin-bottom: 30px;
+    p {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,9 @@
+{% for podcast in podcasts %}
+<div class="row">
+  <div class="col-sm-12 about">
+    <hr>
+    <h2><a href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}</a></h2>
+    <h5>{{podcast.Description}}</h5>
+  </div>
+</div>
+{% endfor %}

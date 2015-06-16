@@ -1,0 +1,17 @@
+<nav class="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <div id="vpr_logo">
+                <a class="navbar-brand" href="http://www.vpr.net"><div id="vpr_svg"></div></a>
+            </div>
+            <h1 id="navbar-title"><a href="{{ url_for('index') }}">VPR's Podcast Directory</a></h1>
+            {% if project_social %}
+            <ul class="list-inline social_logos">
+                <li><a href="https://www.facebook.com/sharer.php?u={{ project_social.url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
+                <li><a href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ project_social.twitter_text|urlencode }}&via=vprnet&hashtags={{ project_social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
+                <li><a href="https://plus.google.com/share?url={{ project_social.url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</nav>

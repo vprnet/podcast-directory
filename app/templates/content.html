@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page_title }} | VPR{% endblock %}
+
+{% block content %}
+<div class="container {% if landing %}landing{% else %}podcast_page{% endif %}">
+    <div class="row">
+        <div class="col-md-10">
+            {% include "_main_block.html" %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

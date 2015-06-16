@@ -1,0 +1,102 @@
+$green: #509e2f;
+$green2: #b5bd00;
+$black: #3f4444;
+$orange: #ed8b00;
+$red: #e04e39;
+$gray: #75787b;
+$blue: #307fe2;
+$percent: 3%;
+$btn-percent: 1%;
+$tablet: 768px;
+$phone: 500px;
+$laptop: 1000px;
+$big-screen: 1200px;
+$black2: darken($black, 10%);
+$gold: #f2e6bd;
+$gold2: #ffd57d;
+$white: darken(white, 5%);
+
+a {
+    color: $blue;
+}
+
+html, body {
+    height: 100%;
+}
+
+#page_container {
+    min-height: 100%;
+    padding-bottom: 57px;
+    background: lighten($gold, 10%);
+}
+
+.navbar {
+    border: 0;
+    border-radius: 0;
+    background-color: $black;
+    min-height: 45px;
+    .navbar-header {
+        float: none;
+        position: relative;
+        a {
+            color: $white;
+            &:hover {
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+        #vpr_logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        h1#navbar-title {
+            margin-top: 10px;
+            font-size: 26px;
+            font-weight: 400;
+            text-align: center;
+        }
+        .social_logos {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: 300;
+            li {
+                font-size: 32px;
+                padding-left: 8px;
+            }
+        }
+    }
+}
+
+footer {
+    background: lighten($black, 15%);
+    font-size: 12px;
+    color: darken(white, 10%);
+    margin-top: -57px;
+    padding: 20px 0 10px;
+    @media (max-width: $tablet) {
+        padding-bottom: 20px;
+    }
+    a {
+    }
+    span#copyright {
+        float: right;
+    }
+}
+
+#underwriter {
+    p {
+        font-size: 12px;
+        padding-left: 0;
+        margin-top: 3px;
+        text-align: center;
+        color: lighten($gray, 10%);
+        li {
+            display: inline
+        }
+    }
+    @media (max-width: 330px) {
+        margin-left: -5px;
+    }
+}
