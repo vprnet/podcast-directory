@@ -5530,14 +5530,14 @@ html, body {
 #page_container {
   min-height: 100%;
   padding-bottom: 57px;
-  background: #faf6e8;
+  background: #ffffff;
 }
 
 /* line 33, ../dev/sass/_vpr.scss */
 .navbar {
   border: 0;
   border-radius: 0;
-  background-color: #3f4444;
+  background-color: #3F4444;
   min-height: 45px;
 }
 /* line 38, ../dev/sass/_vpr.scss */
@@ -9192,11 +9192,11 @@ h1, h2, h3 {
 }
 /* line 46, ../dev/sass/style.scss */
 .navbar .navbar-header #navbar-title a {
-  color: #faf6e8;
+  /*color: #faf6e8;*/
 }
 /* line 48, ../dev/sass/style.scss */
 .navbar .navbar-header #navbar-title a:hover {
-  color: #307fe2;
+  color: #E04E39;
 }
 @media (max-width: 500px) {
   /* line 45, ../dev/sass/style.scss */
@@ -9276,7 +9276,7 @@ h1, h2, h3 {
 }
 /* line 114, ../dev/sass/style.scss */
 .name:hover {
-  color: #307fe2;
+  color: #509E2F;
   text-decoration: none;
 }
 
