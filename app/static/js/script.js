@@ -913,7 +913,7 @@ if (typeof JSON !== 'object') {
 
 							// Equalise
 							lastIframeHash = iframeHash;
-							
+
 							// If there is no iframe hash that means we're at the original
 							// iframe state.
 							// And if there was a hash on the original request, the original
@@ -1131,7 +1131,7 @@ if (typeof JSON !== 'object') {
 				if ( !History.isHashEqual(newStateHash, html4Hash) && !History.isHashEqual(newStateHash, History.getShortUrl(History.getLocationHref())) ) {
 					History.setHash(newStateHash,false);
 				}
-				
+
 				History.busy(false);
 
 				// End pushState closure
@@ -1193,13 +1193,13 @@ if (typeof JSON !== 'object') {
 					// Store the newState
 					History.storeState(newState);
 					History.expectedStateId = newState.id;
-	
+
 					// Recycle the State
 					History.recycleState(newState);
-	
+
 					// Force update of the title
 					History.setTitle(newState);
-					
+
 					// Update HTML5 State
 					History.saveState(newState);
 
@@ -1836,7 +1836,7 @@ if (typeof JSON !== 'object') {
 
 			if (doc.URL.indexOf('#') == -1 && doc.location.href.indexOf('#') != -1)
 				return doc.location.href;
-			
+
 			return doc.URL || doc.location.href;
 		};
 
@@ -2147,7 +2147,7 @@ if (typeof JSON !== 'object') {
 			var id,parts,url, tmp;
 
 			// Extract
-			
+
 			// If the URL has a #, use the id from before the #
 			if (url_or_hash.indexOf('#') != -1)
 			{
@@ -2157,7 +2157,7 @@ if (typeof JSON !== 'object') {
 			{
 				tmp = url_or_hash;
 			}
-			
+
 			parts = /(.*)\&_suid=([0-9]+)$/.exec(tmp);
 			url = parts ? (parts[1]||url_or_hash) : url_or_hash;
 			id = parts ? String(parts[2]||'') : '';
@@ -2357,7 +2357,7 @@ if (typeof JSON !== 'object') {
 			// Return State
 			return State;
 		};
-		
+
 		/**
 		 * History.getCurrentIndex()
 		 * Gets the current index
@@ -2366,7 +2366,7 @@ if (typeof JSON !== 'object') {
 		History.getCurrentIndex = function(){
 			// Prepare
 			var index = null;
-			
+
 			// No states saved
 			if(History.savedStates.length < 1) {
 				index = 0;
@@ -3289,24 +3289,3 @@ if (typeof JSON !== 'object') {
 	}
 
 })(window);
-
-var LFTF = LFTF || {};
-
-LFTF.init = function() {
-    var autoplay = window.location.search.substring(1),
-        youTubeFrame = $('iframe.band_video');
-
-    if (autoplay === 'autoplay') {
-        youTubeFrame.attr('src', LFTF.iframeSrc);
-        $('.featured a').css("display", "none");
-    }
-
-    $('.band_page .featured a').click(function() {
-        event.preventDefault();
-        $(this).fadeOut(600);
-        youTubeFrame.attr('src', LFTF.iframeSrc);
-    });
-
-};
-
-LFTF.init();
