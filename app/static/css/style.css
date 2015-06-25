@@ -2388,7 +2388,7 @@ address {
 
   /* line 1556, ../dev/sass/_bootstrap.scss */
   .col-sm-3 {
-    width: 24%;
+    width: 32%;
   }
 
   /* line 1559, ../dev/sass/_bootstrap.scss */
@@ -5538,7 +5538,7 @@ html, body {
 /* line 27, ../dev/sass/_vpr.scss */
 #page_container {
   min-height: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   background: #FFFFFF;
 }
 
@@ -5609,6 +5609,12 @@ footer span#copyright {
 }
 
 /* line 89, ../dev/sass/_vpr.scss */
+
+#underwriter {
+  margin: 5px;
+}
+
+
 #underwriter p {
   font-size: 12px;
   padding-left: 0;
@@ -9210,13 +9216,10 @@ h1, h2, h3 {
 @media (max-width: 500px) {
   /* line 45, ../dev/sass/style.scss */
   .navbar .navbar-header #navbar-title {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
 }
-/* line 57, ../dev/sass/style.scss */
-.navbar .navbar-header #navbar-title span.live_from {
-  font-family: GrandHotel Regular;
-}
+
 @media (max-width: 768px) {
   /* line 45, ../dev/sass/style.scss */
   .navbar .navbar-header #navbar-title {
