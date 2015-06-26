@@ -8,7 +8,7 @@ def get_podcasts():
 
     for i, podcast in enumerate(sheet):
         if podcast['Category']:
-            podcast['Slug'] = slugify(podcast['Name'])
+            podcast['slug'] = slugify(podcast['Name'])
             podcast_list.insert(0, podcast)
         else:
             podcast_list.append(podcast)
