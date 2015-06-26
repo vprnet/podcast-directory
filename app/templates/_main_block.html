@@ -1,3 +1,9 @@
 {% for podcast in podcasts %}
-    {% include "_vpr_podcast_view.html" %}
+  {% if landing %}
+    {% include "_all_podcasts.html" %}
+  {% endif %}
 {% endfor %}
+
+{% if not landing %}
+  {% include "_podcast_view.html" %}
+{% endif %}

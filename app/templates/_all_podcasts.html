@@ -1,0 +1,8 @@
+<div class="col-sm-3 box">
+  <hr>
+    {% if podcast.Image %}
+      <a class="Name" href="{{url_for('podcast_page', Name=podcast.Slug)}}" alt="{{ podcast.Name }}"><img class="img-responsive" src="{{ podcast.Image }}"></a>
+    {% else %}
+      <h3 class="preview_podcast"><a class="Name" href="{{url_for('podcast_page', Name=podcast.Slug)}}" alt="{{ podcast.Name }}">{{ podcast.Name }}</a></h3>
+    {% endif %}
+</div>

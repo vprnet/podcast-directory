@@ -3,12 +3,14 @@
 {% block title %}{{ page_title }} | VPR{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="col-md-8">
+<div class="container {% if landing %}landing{% else %}podcast_page{% endif %}">
+  <div class="row">
+    <div class="col-md-8">
       {% include "_main_block.html" %}
-  </div>
-  <div class="col-md-4">
+      </div>
+    <div class="col-md-4">
       {% include "_sidebar.html" %}
+    </div>
   </div>
 </div>
 

@@ -33,11 +33,12 @@ def index():
         page_url=page_url)
 
 
-@app.route('/<podcast>')
+@app.route('/<Name>')
 def podcast_page(Name):
     for podcast in podcasts:
-        podcasts.remove(podcast)
-        podcasts.insert(0, podcast)
+        if 'Slug' in podcast and Name == [podcast['Slug']]:
+            podcasts.remove(podcast)
+            podcasts.insert(0, podcast)
 
     page_url = BASE_URL + request.path
     page_title = 'Podcast Directory: ' + podcasts[0]['Name']
