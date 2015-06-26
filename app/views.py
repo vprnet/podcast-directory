@@ -35,6 +35,7 @@ def index():
 
 @app.route('/<Name>')
 def podcast_page(Name):
+    
     page_url = BASE_URL + request.path
     page_title = 'Podcast Directory'
 
@@ -43,7 +44,7 @@ def podcast_page(Name):
         'subtitle': "VPR's Podcast Directory",
         'img': "",
         'description': "VPR's Podcast Directory",
-        'twitter_text': "I found " + podcasts[0]['Name'] + " through VPR's directory.",
+        'twitter_text': "I'm using VPR's directory!",
         'twitter_hashtag': ""
     }
 
