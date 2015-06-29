@@ -1,7 +1,13 @@
 {% for podcast in podcasts %}
-  {% if landing %}
-    {% include "_all_podcasts.html" %}
-  {% else %}
-    {% include "_podcast_view.html" %}
+  {% if loop.first %}
+
+    {% if landing %}
+      {% include "_all_podcasts.html" %}
+    {% endif %}
+
+    {% if not landing %}
+      {% include "_podcast_view.html" %}
+    {% endif %}
+
   {% endif %}
 {% endfor %}

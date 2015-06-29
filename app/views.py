@@ -46,9 +46,9 @@ def podcast_page(Name):
     social = {
         'title': page_title,
         'subtitle': "VPR's Podcast Directory",
-        'img': "",
-        'description': "VPR's Podcast Directory",
-        'twitter_text': "I'm using VPR's directory!",
+        'img': podcasts[0]['Image'],
+        'description': "From VPR's Podcast Directory",
+        'twitter_text': "I found " + podcasts[0]['Name'] + " using VPR's directory!",
         'twitter_hashtag': ""
     }
 

@@ -1,4 +1,16 @@
 <div class="col-sm-3 box">
+<hr>
+  {% if podcast.Image %}
+    <img class="img-responsive" src="{{ podcast.Image }}">
+  {% endif %}
+</div>
+
+<div class="col-sm-3 box">
   <hr>
-  {{ podcast.Description }}
+  <h2><a class="name" href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}</a></h2>
+  <p>{{ podcast.Description }}</p>
+
+  {% if podcast.iTunes %}
+    <h5><a href="{{ podcast.iTunes}}" target="_blank">iTunes</a> {% if podcast.Stitcher %} | <a href="{{ podcast.Stitcher}}" target="_blank"> Stitcher</a></h5>{% endif %}
+  {% endif %}
 </div>
