@@ -86,34 +86,17 @@ h1, h2, h3 {
 }
 
 
-.preview {
-    margin-bottom: 10px;
-    h3.preview_bandname {
-        margin-top: 10px;
-    }
-}
-
-.this_month {
-    font-weight: 600;
-    color: $gray;
-    margin: 20px 0 0;
-    @media (max-width: $phone) {
-        margin-top: 5px;
-    }
-    line-height: 12px;
-    font-size: 12px;
-}
 
 .landing {
-    .featured_band {
+    .featured_podcast {
         margin-top: 0;
     }
 }
 
-.bandname {
+.Name {
     color: $black2;
     &:hover {
-        color: $blue;
+        color: $black2;
         text-decoration: none;
     }
 }

@@ -1,9 +1,9 @@
 <div class="col-sm-3 box">
   <hr>
     {% if podcast.Image %}
-      <a class="Name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}"><img class="img-responsive" src="{{ podcast.Image }}"></a>
+      <a class="name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}"><img class="img-responsive" src="{{ podcast.Image }}"></a>
     {% else %}
-      <h4 class="preview_podcast"><a class="Name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}">{{ podcast.Name }}</a></h4>
+      <h3><a class="name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}">{{ podcast.Name }}</a></h3>
       <p> {{ podcast.Description }} </p>
     {% endif %}
 </div>

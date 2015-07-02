@@ -9,7 +9,7 @@ project_social = {
     'url': BASE_URL,
     'title': "VPR's Podcast Directory",
     'subtitle': "",
-    'img': "",
+    'img': podcasts[0]['Image'],
     'description': "VPR's Podcast Directory, for all your podcast discovery needs.",
     'twitter_text': "I'm using VPR's Podcast Directory.",
     'twitter_hashtag': ""
@@ -48,7 +48,7 @@ def podcast_page(Name):
         'subtitle': "VPR's Podcast Directory",
         'img': podcasts[0]['Image'],
         'description': "From VPR's Podcast Directory",
-        'twitter_text': "I found " + podcasts[0]['Name'] + " using VPR's directory!",
+        'twitter_text': podcasts[0]['Name'],
         'twitter_hashtag': ""
     }
 
