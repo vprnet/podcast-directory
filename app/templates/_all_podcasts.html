@@ -3,7 +3,9 @@
     {% if podcast.Image %}
       <a class="name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}"><img class="img-responsive" src="{{ podcast.Image }}"></a>
     {% else %}
-      <h3><a class="name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}">{{ podcast.Name }}</a></h3>
-      <p> {{ podcast.Description }} </p>
+      <div class="no_image">
+        <h3><a class="name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}">{{ podcast.Name }}</a></h3>
+        <p> {{ podcast.Description }} </p>
+      </div>
     {% endif %}
 </div>

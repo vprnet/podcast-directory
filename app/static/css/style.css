@@ -2069,10 +2069,14 @@ address {
   padding-right: 15px;
   padding-bottom: 15px;
   margin: 5px;
+  height: 100%;
   background-color: #F1F1F1;
-  height: 285px;
   overflow: hidden;
 }
+
+    .no_image {
+      height: 219.54px;
+    }
 
 .col-sm-3.view_box {
   padding-left: 15px;
