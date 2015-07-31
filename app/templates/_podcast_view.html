@@ -11,9 +11,9 @@
   <p>{{ podcast.Description }}</p>
 
   {% if podcast.RSS %}
-    <h5><a class="name" href="{{ podcast.RSS}}" target="_blank">RSS</a>
+    <h5><a class="name" href="{{ podcast.RSS}}" target="_blank"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> RSS</a>
     {% if podcast.iTunes %} |
-      <a class="name" href="{{ podcast.iTunes}}">iTunes</a> {% if podcast.Stitcher %} | <a class="name" href="{{ podcast.Stitcher}}" target="_blank"> Stitcher</a></h5>{% endif %}
+      <a class="name" href="{{ podcast.iTunes}}"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> iTunes</a> {% if podcast.Stitcher %} | <a class="name" href="{{ podcast.Stitcher}}" target="_blank"> Stitcher</a></h5>{% endif %}
     {% endif %}
   {% endif %}
 </div>
