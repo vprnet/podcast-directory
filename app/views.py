@@ -9,7 +9,7 @@ project_social = {
     'url': BASE_URL,
     'title': "VPR's Podcast Directory",
     'subtitle': "",
-    'img': podcasts[0]['Image'],
+    'img': "http://mediad.publicbroadcasting.net/p/vpr/files/vpr-podcast-directory-2015.png",
     'description': "VPR's Podcast Directory, for all your podcast discovery needs.",
     'twitter_text': "I'm using VPR's Podcast Directory.",
     'twitter_hashtag': ""

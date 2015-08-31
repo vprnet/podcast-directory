@@ -2083,10 +2083,18 @@ address {
   padding-right: 15px;
   padding-bottom: 15px;
   margin: 5px;
-  background-color: #F1F1F1;
+  /*background-color: #F1F1F1;*/
   height: 100%;
   overflow: hidden;
 }
+
+.col-md-7.box {
+  padding-top: 15px;
+  margin-top: 5px;
+  height: 100%;
+  overflow: hidden;
+}
+
 
 /* line 1369, ../dev/sass/_bootstrap.scss */
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
@@ -2121,6 +2129,7 @@ address {
 /* line 1387, ../dev/sass/_bootstrap.scss */
 .col-xs-7 {
   width: 58.33333333%;
+  padding-left: 30px;
 }
 
 /* line 1390, ../dev/sass/_bootstrap.scss */
@@ -2181,6 +2190,7 @@ address {
 /* line 1423, ../dev/sass/_bootstrap.scss */
 .col-xs-pull-7 {
   right: 58.33333333%;
+  padding-left: 30px;
 }
 
 /* line 1426, ../dev/sass/_bootstrap.scss */
@@ -2246,6 +2256,7 @@ address {
 /* line 1462, ../dev/sass/_bootstrap.scss */
 .col-xs-push-7 {
   left: 58.33333333%;
+  padding-left: 30px;
 }
 
 /* line 1465, ../dev/sass/_bootstrap.scss */
@@ -2311,6 +2322,7 @@ address {
 /* line 1501, ../dev/sass/_bootstrap.scss */
 .col-xs-offset-7 {
   margin-left: 58.33333333%;
+  padding-left: 30px;
 }
 
 /* line 1504, ../dev/sass/_bootstrap.scss */
@@ -2382,6 +2394,7 @@ address {
   /* line 1544, ../dev/sass/_bootstrap.scss */
   .col-sm-7 {
     width: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1547, ../dev/sass/_bootstrap.scss */
@@ -2442,6 +2455,8 @@ address {
   /* line 1580, ../dev/sass/_bootstrap.scss */
   .col-sm-pull-7 {
     right: 58.33333333%;
+    padding-left: 30px;
+
   }
 
   /* line 1583, ../dev/sass/_bootstrap.scss */
@@ -2507,6 +2522,7 @@ address {
   /* line 1619, ../dev/sass/_bootstrap.scss */
   .col-sm-push-7 {
     left: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1622, ../dev/sass/_bootstrap.scss */
@@ -2572,6 +2588,7 @@ address {
   /* line 1658, ../dev/sass/_bootstrap.scss */
   .col-sm-offset-7 {
     margin-left: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1661, ../dev/sass/_bootstrap.scss */
@@ -2643,6 +2660,7 @@ address {
   /* line 1702, ../dev/sass/_bootstrap.scss */
   .col-md-7 {
     width: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1705, ../dev/sass/_bootstrap.scss */
@@ -2703,6 +2721,7 @@ address {
   /* line 1738, ../dev/sass/_bootstrap.scss */
   .col-md-pull-7 {
     right: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1741, ../dev/sass/_bootstrap.scss */
@@ -2768,6 +2787,7 @@ address {
   /* line 1777, ../dev/sass/_bootstrap.scss */
   .col-md-push-7 {
     left: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1780, ../dev/sass/_bootstrap.scss */
@@ -2833,6 +2853,7 @@ address {
   /* line 1816, ../dev/sass/_bootstrap.scss */
   .col-md-offset-7 {
     margin-left: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1819, ../dev/sass/_bootstrap.scss */
@@ -2904,6 +2925,7 @@ address {
   /* line 1860, ../dev/sass/_bootstrap.scss */
   .col-lg-7 {
     width: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1863, ../dev/sass/_bootstrap.scss */
@@ -2964,6 +2986,7 @@ address {
   /* line 1896, ../dev/sass/_bootstrap.scss */
   .col-lg-pull-7 {
     right: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1899, ../dev/sass/_bootstrap.scss */
@@ -3029,6 +3052,8 @@ address {
   /* line 1935, ../dev/sass/_bootstrap.scss */
   .col-lg-push-7 {
     left: 58.33333333%;
+    padding-left: 30px;
+
   }
 
   /* line 1938, ../dev/sass/_bootstrap.scss */
@@ -3094,6 +3119,7 @@ address {
   /* line 1974, ../dev/sass/_bootstrap.scss */
   .col-lg-offset-7 {
     margin-left: 58.33333333%;
+    padding-left: 30px;
   }
 
   /* line 1977, ../dev/sass/_bootstrap.scss */
