@@ -2074,27 +2074,9 @@ address {
   overflow: hidden;
 }
 
-    .no_image {
-      height: 219.54px;
-    }
-
-.col-sm-3.view_box {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  margin: 5px;
-  /*background-color: #F1F1F1;*/
-  height: 100%;
-  overflow: hidden;
+.col-sm-3.box:hover {
+  border: 1px solid black;
 }
-
-.col-md-7.box {
-  padding-top: 15px;
-  margin-top: 5px;
-  height: 100%;
-  overflow: hidden;
-}
-
 
 /* line 1369, ../dev/sass/_bootstrap.scss */
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
