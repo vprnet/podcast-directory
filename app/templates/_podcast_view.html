@@ -3,29 +3,28 @@
   <img class="img-responsive" src="{{ podcast.Image }}">
 </div>
 
-<div class="col-md-7 box">
-  <h2><a class="name" href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}</a></h2>
+<div class="col-sm-7">
+  <h1><a class="name" href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}</a></h1>
+    <h4>
+      <ul class="list-inline social_logos">
+        <li><a href="https://www.facebook.com/sharer.php?u={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
+        <li><a href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ social.twitter_text|urlencode }}&via=vprnet&hashtags={{ social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
+        <li><a href="https://plus.google.com/share?url={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
+      </ul>
+    </h4>
   <p>{{ podcast.Description }}</p>
 
+  <h4>
+    {% if podcast.RSS %}
+      <a class="name" href="{{ podcast.RSS}}" target="_blank"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> RSS</a>
+    {% endif %}
 
-  {% if podcast.RSS %}
-    <a class="name" href="{{ podcast.RSS}}" target="_blank"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> RSS</a>
-  {% endif %}
+    {% if podcast.iTunes %}
+      <a class="name" href="{{ podcast.iTunes}}"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> iTunes</a>
+    {% endif %}
 
-  {% if podcast.iTunes %}
-    <a class="name" href="{{ podcast.iTunes}}"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> iTunes</a>
-  {% endif %}
-
-  {% if podcast.Stitcher %}
-    <a class="name" href="{{ podcast.Stitcher}}" target="_blank"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> Stitcher</a>
-  {% endif %}
-
-
-  <ul class="list-inline social_logos">
-    <br>
-    <li><a href="https://www.facebook.com/sharer.php?u={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
-    <li><a href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ social.twitter_text|urlencode }}&via=vprnet&hashtags={{ social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
-    <li><a href="https://plus.google.com/share?url={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
-  </ul>
-
+    {% if podcast.Stitcher %}
+      <a class="name" href="{{ podcast.Stitcher}}" target="_blank"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> Stitcher</a>
+    {% endif %}
+  </h4>
 </div>
