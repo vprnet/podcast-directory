@@ -2382,6 +2382,7 @@ address {
   /* line 1544, ../dev/sass/_bootstrap.scss */
   .col-sm-7 {
     width: 58.33333333%;
+    padding-top: 20px;
     padding-left: 30px;
   }
 
