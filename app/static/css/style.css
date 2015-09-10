@@ -2382,7 +2382,7 @@ address {
   /* line 1544, ../dev/sass/_bootstrap.scss */
   .col-sm-7 {
     width: 58.33333333%;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 30px;
   }
 
@@ -5614,7 +5614,7 @@ html, body {
 /* line 64, ../dev/sass/_vpr.scss */
 .navbar .navbar-header .social_logos li {
   font-size: 32px;
-  padding-left: 4px;
+  padding-left: 1px;
 }
 
 /* line 72, ../dev/sass/_vpr.scss */
