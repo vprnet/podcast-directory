@@ -2073,7 +2073,7 @@ address {
 .col-sm-3.box {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   margin: 5px;
   height: 100%;
   background-color: #F1F1F1;
@@ -2382,7 +2382,7 @@ address {
   /* line 1544, ../dev/sass/_bootstrap.scss */
   .col-sm-7 {
     width: 58.33333333%;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
     padding-left: 30px;
   }
 
@@ -9173,7 +9173,6 @@ footer span#copyright {
 
 /* line 1, ../dev/sass/_player.scss */
 div.audio_player {
-  background: white;
   height: 40px;
   margin-left: 40px;
 }
@@ -9181,18 +9180,16 @@ div.audio_player {
 div.audio_player div.play_btn {
   margin-left: -40px;
   cursor: pointer;
-  background: #307fe2;
   width: 40px;
-  padding: 5px 8px 8px;
+  padding: 10px 20px 8px;
   height: 40px;
   font-size: 24px;
-  color: white;
+  color: #585e5e;
   display: inline-block;
 }
 /* line 16, ../dev/sass/_player.scss */
 div.audio_player .progress_bar {
   display: inline-block;
-  background: #307fe2;
   height: 100%;
   width: 0%;
   vertical-align: top;
@@ -9208,14 +9205,10 @@ div.audio_player .duration, div.audio_player .audio_title {
   color: #3f4444;
   font-weight: 500;
   height: 20px;
-  padding: 8px 30px 8px;
-  text-align: right;
+  padding: 15px 30px 8px;
   font-size: 10px;
 }
-/* line 36, ../dev/sass/_player.scss */
-div.audio_player .duration {
-  right: 10px;
-}
+
 /* line 39, ../dev/sass/_player.scss */
 div.audio_player .audio_title {
   left: 20px;
