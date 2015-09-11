@@ -15,10 +15,7 @@ DL.buttonClick = function() {
             DL[DL.tabs[i]].hide();
         }
     }
-    if (thisTab === 'scrapbook' && typeof DL.iframe.attr("src") === 'undefined') {
-        DL.iframe.attr("src", "//storify.com/vprnet/dorothy-s-list-scrapbook/embed?border=false");
-        $('#iframe_script').attr('src', "//storify.com/vprnet/dorothy-s-list-scrapbook.js?border=false");
-    }
+    
 };
 
 DL.iframe = $('iframe#storify');
