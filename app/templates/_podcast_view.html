@@ -18,9 +18,7 @@
   <p>{{ podcast.Description }}</p>
 
   {% if podcast.Audio %}
-    {{ macros.player(podcast.Audio, "Recent Episode 1: ", podcast.Feature ) }}
-    {{ macros.player(podcast.Audio, "Recent Episode 2: ", podcast.Feature ) }}
-    {{ macros.player(podcast.Audio, "Recent Episode 3: ", podcast.Feature ) }}
+    {{ macros.player(podcast.recent_one, "Recent Episode: ", podcast.title_one ) }}
   {% endif %}
   <br>
     <h5>
