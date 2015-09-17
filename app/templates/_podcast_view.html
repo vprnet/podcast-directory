@@ -18,18 +18,18 @@
   <p>{{ podcast.Description }}</p>
 
   {% if podcast.Audio %}
-    {{ macros.player(podcast.recent_one, "Recent Episode: ", podcast.title_one ) }}
+    {{ macros.player(podcast.recent_zero, "", podcast.title_zero ) }}
+    {{ macros.player(podcast.recent_one, "", podcast.title_one ) }}
+    {{ macros.player(podcast.recent_two, "", podcast.title_two ) }}
   {% endif %}
   <br>
     <h5>
       <ul class="list-inline social_logos">
-
         <li>
           {% if podcast.iTunes %}
             <a class="name" href="{{ podcast.iTunes}}"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Open in iTunes</a>
           {% endif %}
         </li>
-
         <li>
           {% if podcast.Other %}
             <a class="name" href="{{ podcast.Other}}" target="_blank"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Open in Another Player</a>
