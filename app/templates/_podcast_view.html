@@ -23,11 +23,6 @@
   <br>
     <h5>
       <ul class="list-inline social_logos">
-        <li>
-          {% if podcast.RSS %}
-            <a class="name" href="{{ podcast.RSS}}" target="_blank"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> RSS Feed</a>
-          {% endif %}
-        </li>
 
         <li>
           {% if podcast.iTunes %}
@@ -36,8 +31,8 @@
         </li>
 
         <li>
-          {% if podcast.Stitcher %}
-            <a class="name" href="{{ podcast.Stitcher}}" target="_blank"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Stitcher</a>
+          {% if podcast.Other %}
+            <a class="name" href="{{ podcast.Other}}" target="_blank"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Open in Another Player</a>
           {% endif %}
         </li>
       </ul>
