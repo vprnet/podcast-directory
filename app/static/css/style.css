@@ -5613,7 +5613,7 @@ html, body {
 }
 /* line 64, ../dev/sass/_vpr.scss */
 .navbar .navbar-header .social_logos li {
-  font-size: 32px;
+  font-size: 30px;
   padding-left: 1px;
 }
 
@@ -9269,7 +9269,7 @@ h1, h2, h3 {
 @media (max-width: 768px) {
   /* line 41, ../dev/sass/style.scss */
   .navbar .navbar-header {
-    padding: 0 5px 0;
+    padding: 0 1px 0;
   }
 }
 /* line 45, ../dev/sass/style.scss */
@@ -9288,7 +9288,7 @@ h1, h2, h3 {
 @media (max-width: 500px) {
   /* line 45, ../dev/sass/style.scss */
   .navbar .navbar-header #navbar-title {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
 }
 
@@ -9311,7 +9311,7 @@ h1, h2, h3 {
 @media (max-width: 500px) {
   /* line 71, ../dev/sass/style.scss */
   .navbar .navbar-header .social_logos li i.icon {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 }
 /* line 79, ../dev/sass/style.scss */
