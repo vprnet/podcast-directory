@@ -2026,10 +2026,10 @@ address {
   padding-right: 15px;
 }
 
-@media (min-width: 368px) {
+@media (min-width: 330px) {
   /* line 1339, ../dev/sass/_bootstrap.scss */
   .container {
-    width: 350px;
+    width: 315px;
   }
 }
 @media (min-width: 768px) {
