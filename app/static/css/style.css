@@ -9269,7 +9269,7 @@ h1, h2, h3 {
 @media (max-width: 768px) {
   /* line 41, ../dev/sass/style.scss */
   .navbar .navbar-header {
-    padding: 0 15px 0;
+    padding: 0 5px 0;
   }
 }
 /* line 45, ../dev/sass/style.scss */
