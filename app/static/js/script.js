@@ -15,7 +15,7 @@ DL.buttonClick = function() {
             DL[DL.tabs[i]].hide();
         }
     }
-    
+
 };
 
 DL.iframe = $('iframe#storify');
