@@ -5655,10 +5655,21 @@ footer span#copyright {
   display: inline;
 }
 @media (max-width: 330px) {
-  /* line 88, ../dev/sass/_vpr.scss */
   #underwriter {
     margin-left: -5px;
   }
+}
+
+#feedback {
+  margin: 5px;
+}
+
+#feedback h3 {
+  text-align: right;
+}
+
+#feedback p {
+  text-align: right;
 }
 
 /* line 1, ../dev/sass/_vpr-svg.scss */
