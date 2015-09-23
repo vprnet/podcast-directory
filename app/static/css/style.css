@@ -2074,14 +2074,15 @@ address {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 25px;
-  margin: 5px;
+  margin: 4px;
+  border: 1px solid transparent;
   height: 100%;
   background-color: #F1F1F1;
   overflow: hidden;
 }
 
 .col-sm-3.box:hover {
-  border: 1px solid black;
+  border-color: black;
 }
 
 /* line 1369, ../dev/sass/_bootstrap.scss */
