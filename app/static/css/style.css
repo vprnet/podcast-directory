@@ -5600,6 +5600,7 @@ html, body {
 }
 /* line 53, ../dev/sass/_vpr.scss */
 .navbar .navbar-header h1#navbar-title {
+  font-family: 'Oswald', sans-serif;
   margin-top: 10px;
   font-size: 26px;
   font-weight: 400;
@@ -9253,7 +9254,7 @@ hr {
 
 /* line 22, ../dev/sass/style.scss */
 h1, h2, h3 {
-  font-family: Molot;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* line 27, ../dev/sass/style.scss */
