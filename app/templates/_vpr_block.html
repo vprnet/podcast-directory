@@ -1,0 +1,17 @@
+<div class="col-md-12 col-sm-12">
+{% if landing %}
+  <h2>VPR Podcasts </h2>
+{% endif %}
+
+{% for podcast in podcasts %}
+  {% if podcast.Category == "VPR" %}
+    {% if landing %}
+      {% include "_all_podcasts.html" %}
+    {% else %}
+      {% if loop.first %}
+        {% include "_podcast_view.html" %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>
