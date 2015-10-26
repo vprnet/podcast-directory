@@ -25,13 +25,17 @@ def get_podcasts():
 
             recent_titles = soup.findAll('title')
 
-            podcast['recent_zero'] = recent_episodes[0]
-            podcast['title_zero'] = recent_titles[2].string
+            try:
+                podcast['recent_zero'] = recent_episodes[0]
+                podcast['title_zero'] = recent_titles[2].string
 
-            podcast['recent_one'] = recent_episodes[1]
-            podcast['title_one'] = recent_titles[3].string
+                podcast['recent_one'] = recent_episodes[1]
+                podcast['title_one'] = recent_titles[3].string
 
-            podcast['recent_two'] = recent_episodes[2]
-            podcast['title_two'] = recent_titles[4].string
+                podcast['recent_two'] = recent_episodes[2]
+                podcast['title_two'] = recent_titles[4].string
+
+            except IndexError:
+                pass
 
     return podcast_list
