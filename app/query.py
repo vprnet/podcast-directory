@@ -36,6 +36,11 @@ def get_podcasts():
                 podcast['title_two'] = recent_titles[4].string
 
             except IndexError:
-                pass
+                podcast['recent_zero'] = False
+                podcast['recent_one'] = False
+                podcast['recent_two'] = False
+                podcast['title_zero'] = False
+                podcast['title_one'] = False
+                podcast['title_two'] = False
 
     return podcast_list
