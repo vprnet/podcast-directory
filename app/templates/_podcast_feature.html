@@ -1,0 +1,13 @@
+<div class="col-md-12 col-sm-12">
+{% if landing %}
+  <h2>Featured Podcast</h2>
+{% endif %}
+
+{% for podcast in podcasts %}
+  {% if landing %}
+    {% if podcast.Spotlight == "Yes" %}
+      {% include "_podcast_view.html" %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>

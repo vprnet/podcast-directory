@@ -7,13 +7,24 @@
 <div class="col-sm-7">
   <hr>
   <h1><a class="name" href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}</a></h1>
-    <h3>
-      <ul class="list-inline social_logos">
-        <li><a class="name" href="https://www.facebook.com/sharer.php?u={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
-        <li><a class="name" href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ social.twitter_text|urlencode }}&via=vprnet&hashtags={{ social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
-        <li><a class="name" href="https://plus.google.com/share?url={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
-      </ul>
-    </h3>
+
+  {% if landing %}
+      <h3>
+        <ul class="list-inline social_logos">
+          <li><a class="name" href="https://www.facebook.com/sharer.php?u={{ spotlight_url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
+          <li><a class="name" href="http://www.twitter.com/intent/tweet?url={{ spotlight_url|urlencode }}&text={{ social.twitter_text|urlencode }}&via=vprnet&hashtags={{ social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
+          <li><a class="name" href="https://plus.google.com/share?url={{ spotlight_url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
+        </ul>
+      </h3>
+  {% else %}
+      <h3>
+        <ul class="list-inline social_logos">
+          <li><a class="name" href="https://www.facebook.com/sharer.php?u={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
+          <li><a class="name" href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ social.twitter_text|urlencode }}&via=vprnet&hashtags={{ social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
+          <li><a class="name" href="https://plus.google.com/share?url={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
+        </ul>
+      </h3>
+  {% endif %}
 
   <p>{{ podcast.Description }}</p>
 
