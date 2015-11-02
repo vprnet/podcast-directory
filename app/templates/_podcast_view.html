@@ -17,7 +17,7 @@
 
   <p>{{ podcast.Description }}</p>
 
-  {% if podcast.Audio %}
+  {% if podcast.RSS %}
     {{ macros.player(podcast.recent_zero, "", podcast.title_zero ) }}
     {{ macros.player(podcast.recent_one, "", podcast.title_one ) }}
     {{ macros.player(podcast.recent_two, "", podcast.title_two ) }}
