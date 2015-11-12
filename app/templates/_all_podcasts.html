@@ -3,9 +3,4 @@
 <div class="col-sm-3 box">
   <hr>
     <a class="name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}"><img class="img-responsive" src="{{ podcast.Image }}"></a>
-    {% if podcast.recent_zero %}
-        {{ macros.player(podcast.recent_zero, "", podcast.title_zero ) }}
-    {% else %}
-        {{ macros.player(podcast.Audio, "", podcast.Feature ) }}
-    {% endif %}
 </div>
