@@ -39,7 +39,7 @@ We use [gspread](https://github.com/burnash/gspread) with the Drive API to conne
 1. Select `Service Account`. You'll see a json file incoming with a `private_key_id`, `private_key`, `client_email`, `client_id`, and `type`.
 1. Save the json file in your project. Be a decent person and add it to your gitignore, too.
 1. The json file is what gets loaded and opened in `sheet.py`. Make sure the names match!
-1. Create a Google Spreadsheet through your Google Drive. Make sure your spreadsheet title is exactly what's trying to be opened in `sheet.py`'s `authorization.open("")` line. To match our project, you'll need to call the columns of your spreadsheet `Name`, `Image`, `Link`, `Audio`, `RSS`, and `Description`. This might change, though, so keep an eye out for updates.
+1. Create a Google Spreadsheet through your Google Drive. Make sure your spreadsheet title is exactly what's trying to be opened in `sheet.py`'s `authorization.open("")` line. To match our project, you'll need to call the columns of your spreadsheet `Name`, `Category`, `Spotlight`, `Image`, `Link`, `Audio`, `Feature`, `RSS`, `iTunes`, `Other`, and `Description`. This might change, though, so keep an eye out for updates.
 1. Finally, *share your Google Spreadsheet* with the email provided in `client_email`. This is important. Don't forget this.
 1. If you have problems running the project locally, you'll likely need to need to `pip install gspread` and `pip install oauth2client` and maybe even `pip install pycrypto` just for kicks.
 
