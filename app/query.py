@@ -4,6 +4,7 @@ from slugify import slugify
 from BeautifulSoup import BeautifulSoup
 import requests
 import re
+import datetime
 
 def get_podcasts():
     sheet = get_google_sheet()
@@ -33,9 +34,9 @@ def get_podcasts():
                     for i in podcast_time_information:
                         time_numbers = [int(s) for s in i if s.isdigit()]
                         podcast_durations.append(time_numbers[-1])
-                    podcast['duration_zero'] = podcast_durations[0]
-                    podcast['duration_one'] = podcast_durations[1]
-                    podcast['duration_two'] = podcast_durations[2]
+                    podcast['duration_zero'] = str(datetime.timedelta(seconds=podcast_durations[0]))
+                    podcast['duration_one'] = str(datetime.timedelta(seconds=podcast_durations[1]))
+                    podcast['duration_two'] = str(datetime.timedelta(seconds=podcast_durations[2]))
                 except IndexError:
                     pass
 
