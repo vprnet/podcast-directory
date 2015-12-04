@@ -31,6 +31,10 @@ $('a.audio_play').click(function() {
 
 
 var canPlay = function(audio, progressBar, fullWidth, duration, remaining, glyphicon, audioLink) {
+    if(!audio.src) {
+      audio.src = audio.dataset.src;
+    }
+
     // Next step: check for other audio playing, pause it!
     audio.addEventListener('ended', function () {
         audio.currentTime = 0;
