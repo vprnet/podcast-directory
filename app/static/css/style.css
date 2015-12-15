@@ -9251,8 +9251,12 @@ hr {
   border-top: 4px solid #585e5e;
 }
 
+hr.side {
+  border-top: 1px solid #585e5e;
+}
+
 /* line 22, ../dev/sass/style.scss */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
 }
 

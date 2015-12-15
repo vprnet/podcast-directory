@@ -1,0 +1,23 @@
+{% import "_macros.html" as macros %}
+
+<div class="col-sm-6">
+  {% if landing %}
+    <hr>
+    {% for podcast in podcasts %}
+      {% if podcast.Spotlight == "Yes" %}
+        {% include "_podcast_spotlight.html" %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</div>
+
+<div class="col-sm-6">
+  {% if landing %}
+    <hr>
+    {% for podcast in podcasts %}
+      {% if podcast.Category == "Staff" %}
+        {% include "_staff_spotlight.html" %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</div>
