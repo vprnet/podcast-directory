@@ -2,7 +2,7 @@
 
 <div class="col-sm-10">
   <hr class="side">
-  <h3><a class="name" href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}</a></h3>
+  <h3><a class="name" href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}: {{ podcast.Feature }}</a></h3>
 </div>
 
 <div class="col-sm-12">
@@ -10,7 +10,6 @@
 </div>
 
 <div class="col-sm-10">
-  {{ macros.player(podcast.Audio, "", podcast.Feature) }}
   <br>
   <p>{{ podcast.Description }}</p>
   <p><strong>Selected by: </strong><a class="name" href="{{ podcast.Twitter }}" target="_blank">{{ podcast.Recommender }}</a>, {{ podcast.JobTitle }}</p>
