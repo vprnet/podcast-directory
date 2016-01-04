@@ -2073,7 +2073,7 @@ address {
 .col-sm-3.box {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   margin: 4px;
   border: 1px solid transparent;
   height: 100%;
@@ -4490,6 +4490,7 @@ input[type="button"].btn-block {
 @media (min-width: 768px) {
   /* line 3005, ../dev/sass/_bootstrap.scss */
   .navbar-collapse {
+    visibility: hidden;
     width: auto;
     border-top: 0;
     box-shadow: none;
@@ -5022,6 +5023,15 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse {
   background-color: #222222;
   border-color: #080808;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  min-height: 80px;
+}
+
+.nav li {
+	display: inline;
+	color: white;
 }
 
 /* line 3398, ../dev/sass/_bootstrap.scss */
@@ -5044,13 +5054,17 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /* line 3409, ../dev/sass/_bootstrap.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #777777;
+	font-weight: 300;
+	padding: 30px 25px 33px 25px;
 }
 
 /* line 3413, ../dev/sass/_bootstrap.scss */
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
+	transition: 0.7s all linear;
   background-color: transparent;
+	height: 100%;
 }
 
 /* line 3419, ../dev/sass/_bootstrap.scss */

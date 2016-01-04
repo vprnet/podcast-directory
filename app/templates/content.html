@@ -3,13 +3,42 @@
 {% block title %}{{ page_title }} | VPR{% endblock %}
 
 {% block content %}
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+         <li><a href="#featured">Featured Podcasts</a></li>
+         <li><a href="#vpr">VPR Podcasts</a></li>
+         <li><a href="#partner">Partner Podcasts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 <div class="container {% if landing %}landing{% else %}podcast_page{% endif %}">
   <div class="row">
     <div class="col-md-8">
-      {% include "_featured_row.html" %}
-      {% include "_vpr_block.html" %}
-      {% include "_partner_block.html" %}
+      <div id="featured" class="container-fluid">
+        {% include "_featured_row.html" %}
+      </div>
+      <div id="vpr" class="container-fluid">
+        {% include "_vpr_block.html" %}
+      </div>
+      <div id="partner" class="container-fluid">
+        {% include "_partner_block.html" %}
+      </div>
     </div>
+
     <div class="col-md-4">
       {% include "_sidebar.html" %}
     </div>
