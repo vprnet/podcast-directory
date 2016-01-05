@@ -9189,7 +9189,7 @@ div.audio_player {
 }
 /* line 5, ../dev/sass/_player.scss */
 div.audio_player div.play_btn {
-  margin-left: -60px;
+  margin-left: -40px;
   cursor: pointer;
   width: 40px;
   padding: 10px 20px 8px;
@@ -9216,14 +9216,13 @@ div.audio_player .duration, div.audio_player .audio_title {
   color: #3f4444;
   font-weight: 500;
   height: 20px;
+  padding: 15px 30px 8px;
   font-size: 10px;
 }
 
 /* line 39, ../dev/sass/_player.scss */
 div.audio_player .audio_title {
-  top: 18px;
-  left: 43px;
-  line-height: 100%;
+  left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -9304,8 +9303,7 @@ h1, h2, h3, h4 {
 @media (max-width: 500px) {
   /* line 45, ../dev/sass/style.scss */
   .navbar .navbar-header #navbar-title {
-    padding-top: 5px;
-    font-size: 18px !important;
+    font-size: 22px !important;
   }
 }
 
