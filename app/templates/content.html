@@ -3,12 +3,19 @@
 {% block title %}{{ page_title }} | VPR{% endblock %}
 
 {% block content %}
+
 <div class="container {% if landing %}landing{% else %}podcast_page{% endif %}">
   <div class="row">
     <div class="col-md-8">
-      {% include "_featured_row.html" %}
-      {% include "_vpr_block.html" %}
-      {% include "_partner_block.html" %}
+        <div id="featured" class="container-fluid">
+          {% include "_featured_row.html" %}
+        </div>
+        <div id="vpr" class="container-fluid">
+          {% include "_vpr_block.html" %}
+        </div>
+        <div id="partner" class="container-fluid">
+          {% include "_partner_block.html" %}
+        </div>
     </div>
     <div class="col-md-4">
       {% include "_sidebar.html" %}

@@ -9,19 +9,20 @@
       <h1 id="navbar-title"><a href="{{ url_for('index') }}">PODCAST DIRECTORY</a></h1>
 
       {% if project_social %}
-      <ul class="list-inline social_logos">
-          <li><a href="https://www.facebook.com/sharer.php?u={{ project_social.url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
-          <li><a href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ project_social.twitter_text|urlencode }}&via=vprnet&hashtags={{ project_social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
-          <li><a href="https://plus.google.com/share?url={{ project_social.url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
-      </ul>
+	      <ul class="list-inline social_logos">
+	          <li><a href="https://www.facebook.com/sharer.php?u={{ project_social.url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
+	          <li><a href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ project_social.twitter_text|urlencode }}&via=vprnet&hashtags={{ project_social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
+	          <li><a href="https://plus.google.com/share?url={{ project_social.url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
       {% endif %}
 
+      {% if landing %}
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
-        <span class="featured"></span>
-        <span class="vpr"></span>
-        <span class="partner"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
+		</ul>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -31,4 +32,5 @@
 					<li><a href="#partner">Partner Podcasts</a></li>
 				</ul>
 	  </div>
+      {% endif %}
 </nav>
