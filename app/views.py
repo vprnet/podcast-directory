@@ -21,8 +21,6 @@ def index():
     page_url = BASE_URL + request.path
     page_title = "VPR's Podcast Directory"
     landing = True
-    # spotlight_url will need to change every time we swap out a featured podcast
-    spotlight_url = "http://www.vpr.net/apps/podcasts/wintry-mix"
 
     social = project_social
 
@@ -32,8 +30,7 @@ def index():
         podcasts=podcasts,
         landing=landing,
         project_social=project_social,
-        page_url=page_url,
-        spotlight_url=spotlight_url)
+        page_url=page_url)
 
 
 @app.route('/<Name>')
