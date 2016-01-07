@@ -1,12 +1,11 @@
 <div class="col-md-12 col-sm-12">
-
 {% if landing %}
   <hr>
-  <h2>VPR Partner Podcasts </h2>
+  <h2>NPR Podcasts </h2>
 {% endif %}
 
 {% for podcast in podcasts %}
-  {% if podcast.Category == "Partner" %}
+  {% if podcast.Category == "NPR" %}
     {% if landing %}
       {% include "_all_podcasts.html" %}
     {% else %}
