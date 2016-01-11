@@ -1,0 +1,19 @@
+<div class="col-md-12 col-sm-12">
+{% if landing %}
+  <hr>
+  <h2>Vermont's Podcasts </h2>
+  <p>There are <a href="http://bit.ly/vermontpodcasts" target="_blank"><strong>dozens of podcasts</strong></a> about Vermont and made by Vermonters. Here are a few of our favorites.
+{% endif %}
+
+{% for podcast in podcasts %}
+  {% if podcast.Category == "Vermont" %}
+    {% if landing %}
+      {% include "_all_vermont_podcasts.html" %}
+    {% else %}
+      {% if loop.first %}
+        {% include "_vermont_podcast_view.html" %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>

@@ -5664,6 +5664,9 @@ footer span#copyright {
   margin: 5px;
 }
 
+#feedback h2 {
+  text-align: right;
+}
 #feedback h3 {
   text-align: right;
 }

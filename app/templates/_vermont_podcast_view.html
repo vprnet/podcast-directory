@@ -1,0 +1,43 @@
+{% import "_macros.html" as macros %}
+<div class="col-sm-5">
+  <hr>
+  <img class="img-responsive" src="{{ podcast.Image }}">
+</div>
+
+<div class="col-sm-7">
+  <hr>
+  <h1><a class="name" href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}</a></h1>
+    <h3>
+      <ul class="list-inline social_logos">
+        <li><a class="name" href="https://www.facebook.com/sharer.php?u={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
+        <li><a class="name" href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ social.twitter_text|urlencode }}&via=vprnet&hashtags={{ social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
+        <li><a class="name" href="https://plus.google.com/share?url={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
+      </ul>
+    </h3>
+  <p>{{ podcast.Description }}</p>
+
+  {% if podcast.recent_zero %}
+    {{ macros.player(podcast.recent_zero, podcast.title_zero, podcast.duration_zero) }}
+    {{ macros.player(podcast.recent_one,  podcast.title_one, podcast.duration_one) }}
+    {{ macros.player(podcast.recent_two, podcast.title_two, podcast.duration_two) }}
+  {% endif %}
+  <br>
+    <h5>
+      <ul class="list-inline social_logos">
+        <li>
+          {% if podcast.iTunes %}
+            <a class="name" href="{{ podcast.iTunes}}"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Open in iTunes</a>
+          {% endif %}
+        </li>
+        <li>
+          {% if podcast.Other %}
+            <a class="name" href="{{ podcast.Other}}" target="_blank"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Open in Another Player</a>
+          {% endif %}
+        </li>
+      </ul>
+    </h5>
+</div>
+
+<div class="col-sm-12">
+  <hr>
+</div>
