@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from sheet import get_google_sheet
+from sheet import get_google_sheet, get_staff_sheet
 from slugify import slugify
 from BeautifulSoup import BeautifulSoup
 import requests
@@ -61,3 +61,13 @@ def get_podcasts():
                 podcast['title_two'] = False
 
     return podcast_list
+
+def get_staff_picks():
+    sheet = get_staff_sheet()
+    staff_podcasts = []
+
+    for i, pick in enumerate(sheet):
+        if pick['Episode']:
+            staff_podcasts.append(pick)
+
+    return staff_podcasts
