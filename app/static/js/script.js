@@ -29,6 +29,23 @@ $('a.audio_play').click(function() {
     audio.addEventListener('ended', canPlay(audio, progressBar, fullWidth, duration, remaining, glyphicon, audioLink));
 });
 
+$(document).on('ready', function(){
+  $('audio').on('play', function(audio){
+    $eventLabel = $(this).data('podcast');
+    /// Send custom event to GA https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+    ga('send', {
+      hitType:'event',
+      eventCategory: 'Podcasts',
+      eventAction: 'play',
+      eventLabel: $eventLabel
+    });
+  });
+
+  $('audio').on('timeupdate', function(audio){
+    /// timeupdate called while audio is playing
+  });
+});
+
 
 var canPlay = function(audio, progressBar, fullWidth, duration, remaining, glyphicon, audioLink) {
     if(!audio.src) {
