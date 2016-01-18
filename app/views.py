@@ -1,8 +1,9 @@
 from index import app
 from flask import render_template, request
-from query import get_podcasts
+from query import get_podcasts, get_staff_picks
 from config import BASE_URL
 
+staff_picks = get_staff_picks()
 podcasts = get_podcasts()
 
 project_social = {
@@ -28,6 +29,7 @@ def index():
         page_title=page_title,
         social=social,
         podcasts=podcasts,
+        staff_picks=staff_picks,
         landing=landing,
         project_social=project_social,
         page_url=page_url)
@@ -56,5 +58,6 @@ def podcast_page(Name):
         page_title=page_title,
         social=social,
         podcasts=podcasts,
+        staff_picks=staff_picks,
         project_social=project_social,
         page_url=page_url)
