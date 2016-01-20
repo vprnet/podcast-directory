@@ -13,5 +13,5 @@
   <br>
   <h4><a class="name" href="{{ pick.Link}}" target="_blank">{{ pick.Episode }}</a></h4>
   <p>{{ pick.Description }}</p>
-  <p><strong>Selected by: </strong><a class="name" href="{{ pick.Twitter }}" target="_blank">{{ pick.Recommender }}</a>, {{ pick.Title }}</p>
+  <p><strong>Selected by: </strong>{% if pick.Twitter %}<a class="name" href="{{ pick.Twitter }}" target="_blank">{% endif %} {{ pick.Recommender }}</a>, {{ pick.Title }}</p>
 </div>
