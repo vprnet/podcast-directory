@@ -17,9 +17,9 @@
   <p>{{ podcast.Description }}</p>
 
   {% if podcast.recent_zero %}
-    {{ macros.player(podcast.recent_zero, podcast.title_zero, podcast.duration_zero) }}
-    {{ macros.player(podcast.recent_one,  podcast.title_one, podcast.duration_one) }}
-    {{ macros.player(podcast.recent_two, podcast.title_two, podcast.duration_two) }}
+    {{ macros.player(podcast.recent_zero, podcast.title_zero, "") }}
+    {{ macros.player(podcast.recent_one,  podcast.title_one, "") }}
+    {{ macros.player(podcast.recent_two, podcast.title_two, "") }}
   {% endif %}
   <br>
     <h5>
