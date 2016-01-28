@@ -32,8 +32,7 @@ $('a.audio_play').click(function() {
 $(document).on('ready', function(){
   $('audio').on('play', function(audio){
     $eventLabel = $(this).data('podcast');
-    /// Send custom event to GA https://developers.google.com/analytics/devguides/collection/analyticsjs/events
-    ga('send', {
+    ga('site1.send', {
       hitType:'event',
       eventCategory: 'Podcasts',
       eventAction: 'play',
