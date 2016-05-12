@@ -43,7 +43,7 @@ def podcast_page(Name):
             podcasts.insert(0, podcast)
 
     page_url = BASE_URL + request.path
-    page_title = "Podcast Directory: " + podcasts[0]["Name"]
+    page_title = podcasts[0]["Name"]
 
     social = {
         "title": page_title,
