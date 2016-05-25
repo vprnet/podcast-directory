@@ -34,6 +34,11 @@
             <a class="name" href="{{ podcast.RSS}}" target="_blank"> RSS Feed</a>
           {% endif %}
         </li>
+        <li>
+          {% if podcast.Link %}
+            <a class="name" href="{{ podcast.Link}}" target="_blank"> Website</a>
+          {% endif %}
+        </li>
       </ul>
     </h5>
 </div>
