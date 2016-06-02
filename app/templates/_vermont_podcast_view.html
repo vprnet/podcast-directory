@@ -26,7 +26,12 @@
       <ul class="list-inline social_logos">
         <li>
           {% if podcast.iTunes %}
-            <a class="name" href="{{ podcast.iTunes}}"> Open in iTunes</a>
+            <a class="name" href="{{ podcast.iTunes}}"> iTunes</a>
+          {% endif %}
+        </li>
+        <li>
+          {% if podcast.Google %}
+          <a class="name" href="{{ podcast.Google}}" target="_blank"> Google Play</a>
           {% endif %}
         </li>
         <li>
