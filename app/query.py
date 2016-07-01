@@ -24,22 +24,6 @@ def get_podcasts():
             all_enclosure_urls = soup.findAll(re.compile('^enclosure'))
             recent_episodes = [tag['url'] for tag in all_enclosure_urls]
 
-            time_lengths = soup.findAll('itunes:duration')
-            all_times = []
-            all_times.append(time_lengths)
-
-            for podcast_time_information in all_times:
-                try:
-                    podcast_durations = []
-                    for i in podcast_time_information:
-                        time_numbers = [int(s) for s in i if s.isdigit()]
-                        podcast_durations.append(time_numbers[-1])
-                    podcast['duration_zero'] = str(datetime.timedelta(seconds=podcast_durations[0]))
-                    podcast['duration_one'] = str(datetime.timedelta(seconds=podcast_durations[1]))
-                    podcast['duration_two'] = str(datetime.timedelta(seconds=podcast_durations[2]))
-                except IndexError:
-                    pass
-
             recent_titles = soup.findAll('title')
 
             try:
