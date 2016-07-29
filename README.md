@@ -44,17 +44,3 @@ We use [gspread](https://github.com/burnash/gspread) with the Drive API to conne
 1. Create a Google Spreadsheet through your Google Drive. Make sure your spreadsheet title is exactly what's trying to be opened in `sheet.py`'s `authorization.open("")` line. To match our project, you'll need two worksheets within the same spreadsheet: `Podcasts` and `Staff Picks`. In the first, we've named our columns: `Name`, `Category`, `Spotlight`, `Image`, `Link`, `Audio`, `Feature`, `RSS`, `iTunes`, `Other`, and `Description`. In the second, we have: `Recommender`, `Title`, `Twitter`, `Episode`, `Podcast`, `Link`, `Description`, and `Image`. We split these up into two separate worksheets in order to keep a clear history of VPR Staff Pick Podcasts.
 1. You may need to *share your Google Spreadsheet* with the email provided in `client_email`.
 1. If you have problems running the project locally, you'll likely need to need to `pip install gspread` and `pip install oauth2client` and maybe even `pip install pycrypto` just for kicks.
-
-
-##Copyright and License
-
-Copyright 2016 Vermont Public Radio
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License.
-You may obtain a copy of the License in the LICENSE file, or at:
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language
-governing permissions under the License.
