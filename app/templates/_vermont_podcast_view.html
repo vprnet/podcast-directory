@@ -26,22 +26,12 @@
       <ul class="list-inline social_logos">
         <li>
           {% if podcast.iTunes %}
-            <a class="name" href="{{ podcast.iTunes}}" target="_blank"> iTunes</a>
+            <a class="name" href="{{ podcast.iTunes }}" alt="iTunes" target="_blank"><img class="badge-responsive" src="http://mediad.publicbroadcasting.net/p/vpr/files/vpr-itunes-store-simon-08012016.png" width="117"></a>
           {% endif %}
         </li>
         <li>
           {% if podcast.Google %}
-          <a class="name" href="{{ podcast.Google}}" target="_blank"> Google Play</a>
-          {% endif %}
-        </li>
-        <li>
-          {% if podcast.RSS %}
-            <a class="name" href="{{ podcast.RSS}}" target="_blank"> RSS Feed</a>
-          {% endif %}
-        </li>
-        <li>
-          {% if podcast.Link %}
-            <a class="name" href="{{ podcast.Link}}" target="_blank"> Website</a>
+          <a class="name" href="{{ podcast.Google }}" alt="Google Play" target="_blank"><img class="badge-responsive" src="http://mediad.publicbroadcasting.net/p/vpr/files/vpr-google-play-simon-08012016.png" width="117"></a>
           {% endif %}
         </li>
       </ul>
