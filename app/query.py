@@ -36,12 +36,6 @@ def get_podcasts():
                 podcast['recent_two'] = recent_episodes[2]
                 podcast['title_two'] = recent_titles[4].string
 
-                podcast['recent_three'] = recent_episodes[3]
-                podcast['title_three'] = recent_titles[5].string
-
-                podcast['recent_four'] = recent_episodes[4]
-                podcast['title_four'] = recent_titles[6].string
-
             except IndexError:
                 podcast['recent_zero'] = False
                 podcast['recent_one'] = False
