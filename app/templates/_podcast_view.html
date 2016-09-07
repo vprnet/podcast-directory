@@ -6,12 +6,12 @@
 
 <div class="col-sm-7">
   <hr>
-  <h1><a class="name" href="{{ podcast.Link}}" target="_blank">{{ podcast.Name }}</a></h1>
+  <h1><a class="name" href="{{ podcast.Link}}">{{ podcast.Name }}</a></h1>
     <h3>
       <ul class="list-inline social_logos">
-        <li><a class="name" href="https://www.facebook.com/sharer.php?u={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
-        <li><a class="name" href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ social.twitter_text|urlencode }}&via=vprnet&hashtags={{ social.twitter_hashtag|urlencode }}" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
-        <li><a class="name" href="https://plus.google.com/share?url={{ page_url|urlencode }}" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
+        <li><a class="name" href="https://www.facebook.com/sharer.php?u={{ page_url|urlencode }}"><i class="icon ion-social-facebook"></i></a></li>
+        <li><a class="name" href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ social.twitter_text|urlencode }}&via=vprnet&hashtags={{ social.twitter_hashtag|urlencode }}"><i class="icon ion-social-twitter"></i></a></li>
+        <li><a class="name" href="https://plus.google.com/share?url={{ page_url|urlencode }}"><i class="icon ion-social-googleplus"></i></a></li>
       </ul>
     </h3>
   <p>{{ podcast.Description }}</p>
@@ -28,12 +28,12 @@
       <ul class="list-inline social_logos">
         <li>
           {% if podcast.iTunes %}
-            <a class="name" href="{{ podcast.iTunes }}" alt="iTunes" target="_blank"><img class="badge-responsive" src="http://mediad.publicbroadcasting.net/p/vpr/files/vpr-itunes-store-simon-08012016.png" width="117"></a>
+            <a class="name" href="{{ podcast.iTunes }}" alt="iTunes"><img class="badge-responsive" src="http://mediad.publicbroadcasting.net/p/vpr/files/vpr-itunes-store-simon-08012016.png" width="117"></a>
           {% endif %}
         </li>
         <li>
           {% if podcast.Google %}
-          <a class="name" href="{{ podcast.Google }}" alt="Google Play" target="_blank"><img class="badge-responsive" src="http://mediad.publicbroadcasting.net/p/vpr/files/vpr-google-play-simon-08012016.png" width="117"></a>
+          <a class="name" href="{{ podcast.Google }}" alt="Google Play"><img class="badge-responsive" src="http://mediad.publicbroadcasting.net/p/vpr/files/vpr-google-play-simon-08012016.png" width="117"></a>
           {% endif %}
         </li>
       </ul>

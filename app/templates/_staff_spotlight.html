@@ -2,16 +2,16 @@
 
 <div class="col-sm-10">
   <hr class="side">
-  <h3><a class="name" href="{{ pick.Link}}" target="_blank">{{ pick.Podcast }}</a></h3>
+  <h3><a class="name" href="{{ pick.Link}}">{{ pick.Podcast }}</a></h3>
 </div>
 
 <div class="col-sm-12">
-  <a class="name" href="{{ pick.Link}}" target="_blank"><img class="img-responsive" src="{{ pick.Image }}" height="250" width="250"></a>
+  <a class="name" href="{{ pick.Link}}"><img class="img-responsive" src="{{ pick.Image }}" height="250" width="250"></a>
 </div>
 
 <div class="col-sm-10">
   <br>
-  <h4><a class="name" href="{{ pick.Link}}" target="_blank">{{ pick.Episode }}</a></h4>
+  <h4><a class="name" href="{{ pick.Link}}">{{ pick.Episode }}</a></h4>
   <p>{{ pick.Description }}</p>
-  <p><strong>Selected by: </strong>{% if pick.Twitter %}<a class="name" href="{{ pick.Twitter }}" target="_blank">{% endif %} {{ pick.Recommender }}</a>, {{ pick.Title }}</p>
+  <p><strong>Selected by: </strong>{% if pick.Twitter %}<a class="name" href="{{ pick.Twitter }}">{% endif %} {{ pick.Recommender }}</a>, {{ pick.Title }}</p>
 </div>
