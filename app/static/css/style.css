@@ -1887,6 +1887,7 @@ ol ol {
 /* line 1233, ../dev/sass/_bootstrap.scss */
 .list-inline > li {
   display: inline-block;
+  padding-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
 }
