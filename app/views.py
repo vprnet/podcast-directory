@@ -11,8 +11,8 @@ project_social = {
     "title": "VPR's Podcast Directory",
     "subtitle": "",
     "img": "http://mediad.publicbroadcasting.net/p/vpr/files/vpr-podcast-directory-2015.png",
-    "description": "VPR's Podcast Directory",
-    "twitter_text": "I'm using VPR's Podcast Directory.",
+    "description": "Listen to VPR podcasts and discover our recommendations.",
+    "twitter_text": "Podcast recommendations from Vermont Public Radio",
     "twitter_hashtag": ""
 }
 
