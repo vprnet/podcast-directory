@@ -19,7 +19,7 @@
   <p>{{ podcast.Description }}</p>
 
   {% if podcast.recent_zero %}
-    {% if podcast.Name == "Rumble Strip Vermont" %}
+    {% if podcast.Name == "Rumble Strip" %}
       {{ macros.player(podcast.Audio, "", podcast.Feature ) }}
     {% else %}
       {{ macros.player(podcast.recent_zero, podcast.title_zero, "") }}
