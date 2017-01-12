@@ -13,8 +13,10 @@
   <br>
   {% if podcast.Name == "Rumble Strip" %}
     <h4>Good Conversation That Takes Its Time</h4>
+    <p>{{ podcast.Description }}</p>
+    <p>VPR will be airing feature programs taken from the podcast on the second Thursday of the month at 7:50am and the following Friday at 6:20pm. You'll find the full Rumble Strip podcast series on the<b><a class="name" href="http://www.rumblestripvermont.com/"> Rumble Strip website</b></a>.</p>
   {% else %}
     <h4>{{ podcast.Feature }}</h4>
+    <p>{{ podcast.Description }}</p>
   {% endif %}
-  <p>{{ podcast.Description }}</p>
 </div>

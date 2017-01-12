@@ -20,6 +20,7 @@
 
   {% if podcast.recent_zero %}
     {% if podcast.Name == "Rumble Strip" %}
+      <p>VPR will be airing feature programs taken from the podcast on the second Thursday of the month at 7:50am and the following Friday at 6:20pm. You'll find the full Rumble Strip podcast series on the<b><a class="name" href="http://www.rumblestripvermont.com/"> Rumble Strip website</b></a>.</p>
       {{ macros.player(podcast.Audio, "", podcast.Feature ) }}
     {% else %}
       {{ macros.player(podcast.recent_zero, podcast.title_zero, "") }}
