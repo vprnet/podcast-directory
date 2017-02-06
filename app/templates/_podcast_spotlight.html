@@ -3,6 +3,7 @@
 <div class="col-sm-3 box">
   <hr class="side">
   <a class="name" href="{{url_for('podcast_page', Name=podcast.slug)}}" alt="{{ podcast.Name }}"><img class="img-responsive" src="{{ podcast.Image }}" height="250" width="250"></a>
+  {{ macros.player(podcast.Audio, "", podcast.Feature ) }}
 </div>
 
 <div class="col-sm-7 box">
