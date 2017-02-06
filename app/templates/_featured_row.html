@@ -1,17 +1,6 @@
 {% import "_macros.html" as macros %}
 
-<div class="col-sm-6">
-  {% if landing %}
-    <hr>
-    {% for pick in staff_picks %}
-      {% if pick == staff_picks[-1] %}
-        {% include "_staff_spotlight.html" %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-</div>
-
-<div class="col-sm-6">
+<div class="col-sm-12">
   {% if landing %}
     <hr>
     {% for podcast in podcasts %}
