@@ -9402,3 +9402,12 @@ h1, h2, h3, h4 {
 .about p {
   font-size: 18px;
 }
+
+.icon-alone {
+  display: inline-block; 
+}
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
