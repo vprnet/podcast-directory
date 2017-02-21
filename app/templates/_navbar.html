@@ -10,10 +10,11 @@
 
       {% if project_social %}
 	      <ul class="list-inline social_logos">
-	          <li><a href="https://www.facebook.com/sharer.php?u={{ project_social.url|urlencode }}"><i class="icon ion-social-facebook"></i></a></li>
-	          <li><a href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ project_social.twitter_text|urlencode }}&via=vprnet&hashtags={{ project_social.twitter_hashtag|urlencode }}"><i class="icon ion-social-twitter"></i></a></li>
-	          <li><a href="https://plus.google.com/share?url={{ project_social.url|urlencode }}"><i class="icon ion-social-googleplus"></i></a></li>
-      {% endif %}
+	          <li><a href="https://www.facebook.com/sharer.php?u={{ project_social.url|urlencode }}" class="icon-alone" alt="Share on Facebook"><i class="icon ion-social-facebook"></i><span class="screen-reader-text">Facebook</span></a></li>
+	          <li><a href="http://www.twitter.com/intent/tweet?url={{ page_url|urlencode }}&text={{ project_social.twitter_text|urlencode }}&via=vprnet&hashtags={{ project_social.twitter_hashtag|urlencode }}" class="icon-alone"><i class="icon ion-social-twitter" alt="Share on Twitter"></i><span class="screen-reader-text">Twitter</span></a></li>
+	          <li><a href="https://plus.google.com/share?url={{ project_social.url|urlencode }}" class="icon-alone"><i class="icon ion-social-googleplus" alt="Share on Google Plus"></i><span class="screen-reader-text">Google Plus</span></a></li>
+				</ul>
+			{% endif %}
 
 		</div>
   </div>
