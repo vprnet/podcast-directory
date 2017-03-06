@@ -1,6 +1,17 @@
 {% import "_macros.html" as macros %}
 
-<div class="col-sm-12">
+<div class="col-sm-6">
+  {% if landing %}
+    <hr>
+    {% for podcast in podcasts %}
+      {% if podcast.Featured_VPR == "Yes" %}
+        {% include "_staff_spotlight.html" %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</div>
+
+<div class="col-sm-6">
   {% if landing %}
     <hr>
     {% for podcast in podcasts %}
