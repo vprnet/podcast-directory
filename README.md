@@ -1,8 +1,8 @@
-#VPR's Podcast Directory
+# VPR's Podcast Directory
 
 This is iteration one of VPR's podcast directory. We're thinking about this project as both a resource and a discovery tool. We know there are tons of podcasts Vermonters enjoy. We want to showcase them and share them.
 
-##Get Involved
+## Get Involved
 
 We also want your help. If you're a Vermonter and you host a podcast, get in touch. If you're a Vermonter and you have a favorite local podcast, get in touch. If you're a developer and you think you can do this much better than I can, pull request accepted. Welcome to public media, folks.
 
@@ -10,7 +10,7 @@ My name is Sara, and I'm in charge of all things code on this project. There's a
 
 So, reach out! I'm at [@sarambsimon](http://twitter.com/sarambsimon).  
 
-##Notes on the Project
+## Notes on the Project
 
 This project started with VPR's [Live From the Fort](http://www.vpr.net/apps/live-from-the-fort/) as a template. Vermonters love to recycle.
 
@@ -26,7 +26,7 @@ The steps to get set up are here:
 1. Install the app requirements. `pip install -r requirements.txt`
 1. To run locally, just hit a quick	`python app/index.py` and head to `127.0.0.1:5000`, but know that it will all be broken until you follow the Google Spreadsheet steps below.
 
-##Notes on Interacting with Google Spreadsheets
+## Notes on Interacting with Google Spreadsheets
 
 The project is hooked up to a Google Spreadsheet that VPR producers and editors can populate. If you're interested in cloning this project, you'll need your own Google Spreadsheet to get started.
 
