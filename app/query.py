@@ -26,6 +26,9 @@ def get_podcasts():
 
             recent_titles = soup.findAll('title')
 
+            if podcast['Featured_VPR'] == "Yes":
+                podcast['Teaser'] = soup.find('itunes:subtitle').string
+
             try:
                 podcast['recent_zero'] = recent_episodes[0]
                 podcast['title_zero'] = recent_titles[2].string
