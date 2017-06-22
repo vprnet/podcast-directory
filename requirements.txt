@@ -11,3 +11,6 @@ itsdangerous==0.23
 python-slugify==0.0.7
 requests==2.2.1
 wsgiref==0.1.2
+gspread
+oauth2client
+pycrypto
