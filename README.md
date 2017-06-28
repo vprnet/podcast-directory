@@ -2,29 +2,38 @@
 
 This is iteration one of VPR's podcast directory. We're thinking about this project as both a resource and a discovery tool. We know there are tons of podcasts Vermonters enjoy. We want to showcase them and share them.
 
+
 ## Get Involved
 
-We also want your help. If you're a Vermonter and you host a podcast, get in touch. If you're a Vermonter and you have a favorite local podcast, get in touch. If you're a developer and you think you can do this much better than I can, pull request accepted. Welcome to public media, folks.
+We also want your help. If you're a Vermonter and you host a podcast, get in touch. If you're a Vermonter and you have a favorite local podcast, get in touch. If you're a developer and you think you can do this much better than we can, pull request accepted. This is public media, folks.
 
-My name is Sara, and I'm in charge of all things code on this project. There's a whole digital team alongside me here, but chances are that if you're finding out about it through the GitHub repo, I'm the person you'll want to get in touch with.
-
-So, reach out! I'm at [@sarambsimon](http://twitter.com/sarambsimon).  
 
 ## Notes on the Project
 
 This project started with VPR's [Live From the Fort](http://www.vpr.net/apps/live-from-the-fort/) as a template. Vermonters love to recycle.
 
-The steps to get set up are here:
+### One-time set-up work:
 
 1. Make sure you have Python 2.7 installed.
 1. Clone the repo locally. `git clone git@github.com:vprnet/podcast-directory.git`
 1. [Install `pip`](https://pip.pypa.io/en/latest/installing.html)
 1. Install virtualenv. `pip install virtualenv`
-1. Change into the project directory. `cd podcast-directory`
 1. Create a virtual environment for the app. `virtualenv venv`
-1. Enter the virtual environment. `source venv/bin/activate`
 1. Install the app requirements. `pip install -r requirements.txt`
-1. To run locally, just hit a quick	`python app/index.py` and head to `127.0.0.1:5000`, but know that it will all be broken until you follow the Google Spreadsheet steps below.
+1. Duplicate `_config.py` as `config.py`, which will be your private, git-ignored file of keys.
+1. Grab the secret `podcast-access.json` file from someone on the VPR team.
+
+### Regular Updates, start here:
+
+1. Change into the project directory. `cd podcast-directory`
+1. Enter the virtual environment. `source venv/bin/activate`
+1. To run locally, just hit a quick	`python app/index.py` and head to `127.0.0.1:5000`
+
+
+### Pushing to production:
+
+This project runs on a cron job in Webfaction. The cron is currently set to run three times a day, pushing up to Amazon S3. To update the production code, SSH into our Webfaction server and update changes to the production code.
+
 
 ## Notes on Interacting with Google Spreadsheets
 
