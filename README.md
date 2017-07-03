@@ -12,7 +12,15 @@ We also want your help. If you're a Vermonter and you host a podcast, get in tou
 
 This project started with VPR's [Live From the Fort](http://www.vpr.net/apps/live-from-the-fort/) as a template. Vermonters love to recycle.
 
-### One-time set-up work:
+
+## Notes on Rumble Strip
+
+As you can see in `templates/_all_podcasts.html`, `templates/_podcast_spotlight.html`, and `templates/_podcast_view.html`, the Rumble Strip podcast works a bit differently than the others listed in the directory. This is because once a month, VPR airs an old episode of Rumble Strip and we've wanted the directory to feature that episode, so we don't want it to just pull and highlight the three most recent episodes from the RSS feed.
+
+That all said, the code is set up so that everything's automated from the Google Spreadsheet. When Franny sends a ticket with a new Rumble Strip episode, all that needs to happen is an update to the spreadsheet. The code will run on the cron and update automatically.
+
+
+## One-time set-up work:
 
 1. Make sure you have Python 2.7 installed.
 1. Clone the repo locally. `git clone git@github.com:vprnet/podcast-directory.git`
@@ -23,14 +31,15 @@ This project started with VPR's [Live From the Fort](http://www.vpr.net/apps/liv
 1. Duplicate `_config.py` as `config.py`, which will be your private, git-ignored file of keys.
 1. Grab the secret `podcast-access.json` file from someone on the VPR team.
 
-### Regular Updates, start here:
+
+## Regular Updates, start here:
 
 1. Change into the project directory. `cd podcast-directory`
 1. Enter the virtual environment. `source venv/bin/activate`
 1. To run locally, just hit a quick	`python app/index.py` and head to `127.0.0.1:5000`
 
 
-### Pushing to production:
+## Pushing to production:
 
 This project runs on a cron job in Webfaction. The cron is currently set to run three times a day, pushing up to Amazon S3. To update the production code, SSH into our Webfaction server and update changes to the production code.
 
